@@ -8,13 +8,13 @@ def predict():
     data = request.get_json()
     sentence = data.get('sentence')
     
-    # Sử dụng hàm infer từ infer_example.py để dự đoán sentiment
+    # Gọi hàm infer từ infer_example.py và nhận kết quả trả về
     prediction_result = infer_example.infer(sentence)
     
-    # Tạo response JSON từ kết quả dự đoán
+    # Tạo response JSON với cấu trúc mong muốn
     response = {
-        'sentence': sentence,
-        'result': prediction_result
+        "result": prediction_result["result"],  # Chỉ lấy phần "result" từ infer
+        "sentence": sentence
     }
     return jsonify(response)
 
