@@ -21,7 +21,7 @@ def load_aspect_dict(filepath):
 aspect_categories = {
     "Chất lượng sản phẩm": [
         "chất lượng", "hiệu năng", "độ bền", "màn hình", "độ phân giải", "âm thanh", "loa", "chất lượng màn hình",
-        "hiển thị", "hình ảnh", "cảm biến", "sức mạnh", "chất lượng hiển thị", "phần mềm", "camera", "máy ảnh",
+        "hiển thị", "hình ảnh", "cảm biến", "sức mạnh", "chất lượng hiển thị", "phần mềm", "camera", "máy ảnh", "máy"
         "đa nhiệm", "chụp ảnh", "cảm biến vân tay", "nét chữ", "kết nối wifi", "độ sáng", "ram", "hiệu quả", "tiếng chuông",
         "bắt wifi", "sóng", "tín hiệu", "độ tương phản màn hình", "phát wifi", "màn hình tần số quét", "độ hoàn thiện",
         "tốc độ", "xử lý", "tốc độ phản hồi", "sản phẩm", "phục vụ", "chất luọng", "chât lương", "sản pham",
@@ -29,7 +29,9 @@ aspect_categories = {
         "điểm chết trên màn hình", "màu sắc hình ảnh", "độ phân giải màn hình", "hình ảnh chữ", "PC", "Laptop", "Máy tính bảng", "Máy tính", "Máy tính xách tay", "Máy tính cầm tay",
         # New terms
         "chất lượng sp", "chất vải", "chất", "chất áo", "chất liệu vải", "chất liệu", "chất da", "điện thoại", 
-        "thân máy", "đt", "may", "điên thoai", "dien thoai", "đồ nokia", "đt nokia", "iphone", "iphone 13", "thiết bị"
+        "thân máy", "đt", "may", "điên thoai", "dien thoai", "đồ nokia", "đt nokia", "iphone", "iphone 13", "thiết bị", "áo", "quần", "vải", "vải áo", "vải quần", "ống quần", "kích cỡ", "form áo", "cổ áo", "áo polo", "áo mút"
+        ,"set áo", "set đồ", "áo croptop", "khuy", "khuy áo", "balo","ốp lưng","màu sắc màn hình", "giày", "giầy", "dép","ứng dụng camera", "hàng hóa", "san phẩm", "san pham", "sp", "hàng hoá", "sản phảm"
+        , "hàng", "pin"
     ],
     "Giá cả và chi phí": [
         "giá", "giá cả", "giá tiền", "tầm giá", "chi phí", "túi tiền", "mức giá", "giá thành", "gia", "giá cã", 
@@ -38,31 +40,31 @@ aspect_categories = {
     "Thiết kế và hình thức": [
         "thiết kế", "màu sắc", "kích thước", "vỏ máy", "hình thức", "vỏ kim loại", "vỏ hộp", "kiểu dáng", "ngoại hình",
         "màu vàng", "màu đen", "màu trắng", "màu xanh", "màu đỏ", "khung viền", "viền màn hình", "cầm nắm", "trọng lượng",
-        "vỏ nhôm", "tông màu", "hộp ngoài", "mặt lưng bóng", "ốp lưng", "chống sốc", "mỏng", "điểm chết trên màn hình",
-        "mẫu", "mẫu mã", "màn cạnh bên trái", "góc nhìn", "màu sắc màn hình", "góc trái màn hình", "bên ngoài", "bên phải",
+        "vỏ nhôm", "tông màu", "hộp ngoài", "mặt lưng bóng", "chống sốc", "mỏng", "điểm chết trên màn hình",
+        "mẫu", "mẫu mã", "màn cạnh bên trái", "góc nhìn", "góc trái màn hình", "bên ngoài", "bên phải",
         # New terms
-        "áo", "quần", "vải", "vải áo", "vải quần", "ống quần", "kích cỡ", "form áo", "cổ áo", "màu", "size",
+        "màu", "size",
         "chiều rộng", "chiều dài", "nắp túi", "đường chỉ", "dây quay cắp", "đường may", "quần lót", "túi",
-        "cúc áo", "da", "kiểu dáng", "chữ in", "vải thun", "váy", "áo sơ mi", "ống tay", "vai", "balo",
-        "tay áo", "chân váy", "chữ", "đường kim mũi", "khuy", "khuy áo", "set áo", "set đồ", "áo croptop",
-        "áo polo", "áo mút"
+        "cúc áo", "da", "kiểu dáng", "chữ in", "vải thun", "váy", "áo sơ mi", "ống tay", "vai", 
+        "tay áo", "chân váy", "chữ", "đường kim mũi"
+        
     ],
     "Trải nghiệm sử dụng": [
         "cảm giác", "cảm ứng", "sử dụng", "bàn phím", "chơi game", "trải nghiệm", "nghe gọi", "chơi liên quân", "đọc sách",
         "lướt web", "lấy nét", "âm thanh cuộc gọi", "cảm nhận đầu tiên", "nghe nhạc", "xài app", "mọi người", "mọi chức năng",
         "mọi ứng dụng", "thao tác", "dùng", "sử dụng", "khởi động", "hoạt động", "tác vụ", "ứng dụng", "làm việc",
-        "ứng dụng camera", "phần cứng", "dữ liệu lưu sdt",
+        "phần cứng", "dữ liệu lưu sdt",
         # New terms
-        "mặc", "tư vấn", "giày", "giầy", "dép", "mùi", "trách nhiệm", "sách"
+        "mặc",  "mùi", "sách"
     ],
     "Dịch vụ và hỗ trợ khách hàng": [
         "dịch vụ", "hỗ trợ", "chăm sóc khách hàng", "nhân viên hỗ trợ", "nv giao hàng", "dịch vụ ship", "thái độ",
         "hỗ trợ kỹ thuật", "support", "nhân viên cskh", "phản hồi thông tin", "nhân viên chăm sóc khách hàng", "cskh",
         "dịch vụ giao hàng", "dịch vụ hỗ trợ", "dịch vụ hỗ trợ từ nhà cung cấp", "thái độ phục vụ", "tư vấn", "shop", "shop xử lý",
         "người bán", "bán hàng", "nhân viên", "nv giao hàng", "đội ngũ tiki", "nhân viện hỗ trợ", "nhân viên giao hàng",
-        "chăm sóc", "chăm sóc khách", "hàng giao"
+        "chăm sóc", "chăm sóc khách", "hàng giao", "tư vấn", "chăm sóc khách hàng", "trách nhiệm",
         # New terms
-        "phục vụ", "tư vấn"
+        "phục vụ", "tư vấn", "chất lượng dịch vụ"
     ],
     "Vận chuyển và đóng gói": [
         "đóng gói", "vận chuyển", "thời gian giao hàng", "ship", "đơn vị vận chuyển", "vận chuyển đóng gói", "cách đóng gói",
@@ -75,7 +77,7 @@ aspect_categories = {
         "đóng gói sản phẩm", "đóng gói", "hộp carton", "hộp đựng giày", "hộp đựng giầy"
     ],
     "Phụ kiện và tính năng bổ sung": [
-        "phụ kiện", "tai nghe", "bao da", "cảm biến vân tay", "dây sạc", "sạc pin", "dây gắn tai nghe", "pin",
+        "phụ kiện", "tai nghe", "bao da", "cảm biến vân tay", "dây sạc", "sạc pin", "dây gắn tai nghe",
         "cổng sạc", "mic", "ram", "cục pin", "loa ngoài", "loa trong", "đèn vàng", "chữ to", "thời lượng pin", "case tặng kèm",
         "túi tặng kèm", "camera kép", "sản phẩm khuyến mại", "phần mềm", "máy đọc sách", "máy tính bảng", "ipad",
         "túi chống sốc", "take note", "dán seal", "bóc seal", "miếng dán màn hình", "cổng sạc c", "bàn phím bấm",
@@ -93,18 +95,19 @@ aspect_categories = {
         "giấy", "thời gian bảo hành"
     ],
     "Khác": [
-        "quà tặng", "hàng hóa", "đổi", "ưu đãi", "hộp", "hàng dùng thử", "bản kid", "hàng điện tử",
-        "gói hàng", "hàng nhập khẩu", "hàng ref", "mọi thứ", "hàng hoá", "sản phảm", "san phẩm", "san pham", "sp",
+        "quà tặng", "đổi", "ưu đãi", "hộp", "hàng dùng thử", "bản kid", "hàng điện tử",
+        "gói hàng", "hàng nhập khẩu", "hàng ref", "mọi thứ", 
         "phiên bản", "bản thường", "cập nhật", "bản kid", "đơn hàng", "cập nhật", "portrait", "đổi","thấm hút"
         # New terms
         "công nghệ", "gối", "đồ", "kem", "son", "tất", "nội dung"
     ]
 }
 
-# Hàm phân loại từ vào danh mục
+# Hàm phân loại từ vào danh mục với kiểm tra từ khóa chính xác
 def classify_aspect(word):
     for category, keywords in aspect_categories.items():
-        if any(keyword in word for keyword in keywords):
+        # Sử dụng regex để chỉ tìm từ khóa chính xác
+        if any(re.search(rf'\b{re.escape(keyword)}\b', word) for keyword in keywords):
             return category
     return "Khác"
 
@@ -209,8 +212,14 @@ def split_sentence(sentence):
         parts = new_parts
     
     return [part.strip() for part in parts if part.strip()]
-
-# Hàm infer với xử lý từ nối "và", "cộng" và các từ "như thế", "như vậy", "cũng vậy", "cũng như thế", "giống vậy"
+# Hàm tách phần trước từ "của"
+def extract_aspect_before_cua(sentence):
+    # Tìm từ "của" trong câu
+    match = re.search(r"(.*?)\s+của\s+", sentence)  # Tìm phần trước từ "của"
+    if match:
+        return match.group(1).strip()  # Trả về phần trước "của"
+    else:
+        return sentence  # Nếu không có "của", trả về toàn bộ câu
 def infer(sentence):
     aspect_dict = load_aspect_dict(ASPECT_DICT_PATH)
     results = []
@@ -231,7 +240,9 @@ def infer(sentence):
         reference_phrases = ["như thế", "như vậy", "cũng vậy", "cũng như thế", "giống vậy"]  # Các cụm từ để nhận diện tham chiếu cảm xúc trước đó
         
         for part in sentence_parts:
-            aspects = identify_aspects(part, aspect_dict)
+            # Kiểm tra và xử lý trường hợp có "của"
+            part_before_cua = extract_aspect_before_cua(part)  # Tách phần trước từ "của"
+            aspects = identify_aspects(part_before_cua, aspect_dict) if part_before_cua != part else identify_aspects(part, aspect_dict)
             
             if aspects:
                 # Xác định khía cạnh và phân loại câu
@@ -271,7 +282,9 @@ def infer(sentence):
                 })
     else:
         # Nếu câu không có các từ nối đặc biệt, xử lý như bình thường
-        aspects = identify_aspects(sentence.lower(), aspect_dict)
+        part_before_cua = extract_aspect_before_cua(sentence)  # Tách phần trước từ "của"
+        aspects = identify_aspects(part_before_cua, aspect_dict) if part_before_cua != sentence else identify_aspects(sentence.lower(), aspect_dict)
+        
         if aspects:
             main_aspect = list(aspects.keys())[0]
             main_phrase = aspects[main_aspect]
