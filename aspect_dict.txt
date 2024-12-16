@@ -459,7 +459,6 @@ bên vận chuyển
 kích thước
 thời gian luân chuyển
 dữ liệu lưu sdt
-người lớn tuổi
 cầm nắm
 mẫu mã
 cổng sạc c

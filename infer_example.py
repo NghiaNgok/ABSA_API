@@ -20,86 +20,64 @@ def load_aspect_dict(filepath):
 # Danh mục khía cạnh
 aspect_categories = {
     "Chất lượng sản phẩm": [
+        # Từ vựng từ các mục "Chất lượng sản phẩm", "Thiết kế và hình thức",
+        # "Trải nghiệm sử dụng", và "Phụ kiện và tính năng bổ sung"
         "chất lượng", "hiệu năng", "độ bền", "màn hình", "độ phân giải", "âm thanh", "loa", "chất lượng màn hình",
-        "hiển thị", "hình ảnh", "cảm biến", "sức mạnh", "chất lượng hiển thị", "phần mềm", "camera", "máy ảnh", "máy"
+        "hiển thị", "hình ảnh", "cảm biến", "sức mạnh", "chất lượng hiển thị", "phần mềm", "camera", "máy ảnh",
         "đa nhiệm", "chụp ảnh", "cảm biến vân tay", "nét chữ", "kết nối wifi", "độ sáng", "ram", "hiệu quả", "tiếng chuông",
         "bắt wifi", "sóng", "tín hiệu", "độ tương phản màn hình", "phát wifi", "màn hình tần số quét", "độ hoàn thiện",
         "tốc độ", "xử lý", "tốc độ phản hồi", "sản phẩm", "phục vụ", "chất luọng", "chât lương", "sản pham",
         "chất lượng đt", "chất lượng máy", "chất lượng sản phẩm", "độ hoàn thiện", "chất lượng giá", "chat lượng",
         "điểm chết trên màn hình", "màu sắc hình ảnh", "độ phân giải màn hình", "hình ảnh chữ", "PC", "Laptop", "Máy tính bảng", "Máy tính", "Máy tính xách tay", "Máy tính cầm tay",
-        # New terms
         "chất lượng sp", "chất vải", "chất", "chất áo", "chất liệu vải", "chất liệu", "chất da", "điện thoại", 
-        "thân máy", "đt", "may", "điên thoai", "dien thoai", "đồ nokia", "đt nokia", "iphone", "iphone 13", "thiết bị", "áo", "quần", "vải", "vải áo", "vải quần", "ống quần", "kích cỡ", "form áo", "cổ áo", "áo polo", "áo mút"
-        ,"set áo", "set đồ", "áo croptop", "khuy", "khuy áo", "balo","ốp lưng","màu sắc màn hình", "giày", "giầy", "dép","ứng dụng camera", "hàng hóa", "san phẩm", "san pham", "sp", "hàng hoá", "sản phảm"
-        , "hàng", "pin"
-    ],
-    "Giá cả và chi phí": [
-        "giá", "giá cả", "giá tiền", "tầm giá", "chi phí", "túi tiền", "mức giá", "giá thành", "gia", "giá cã", 
-        "gía", "tiền"
-    ],
-    "Thiết kế và hình thức": [
+        "thân máy", "đt", "may", "điên thoai", "dien thoai", "đồ nokia", "đt nokia", "iphone", "iphone 13", "thiết bị", "hiệu suất",
         "thiết kế", "màu sắc", "kích thước", "vỏ máy", "hình thức", "vỏ kim loại", "vỏ hộp", "kiểu dáng", "ngoại hình",
         "màu vàng", "màu đen", "màu trắng", "màu xanh", "màu đỏ", "khung viền", "viền màn hình", "cầm nắm", "trọng lượng",
-        "vỏ nhôm", "tông màu", "hộp ngoài", "mặt lưng bóng", "chống sốc", "mỏng", "điểm chết trên màn hình",
-        "mẫu", "mẫu mã", "màn cạnh bên trái", "góc nhìn", "góc trái màn hình", "bên ngoài", "bên phải",
-        # New terms
-        "màu", "size",
-        "chiều rộng", "chiều dài", "nắp túi", "đường chỉ", "dây quay cắp", "đường may", "quần lót", "túi",
-        "cúc áo", "da", "kiểu dáng", "chữ in", "vải thun", "váy", "áo sơ mi", "ống tay", "vai", 
-        "tay áo", "chân váy", "chữ", "đường kim mũi"
-        
-    ],
-    "Trải nghiệm sử dụng": [
+        "vỏ nhôm", "tông màu", "hộp ngoài", "mặt lưng bóng", "ốp lưng", "chống sốc", "mỏng", "điểm chết trên màn hình",
+        "mẫu", "mẫu mã", "màn cạnh bên trái", "góc nhìn", "màu sắc màn hình", "góc trái màn hình", "bên ngoài", "bên phải",
         "cảm giác", "cảm ứng", "sử dụng", "bàn phím", "chơi game", "trải nghiệm", "nghe gọi", "chơi liên quân", "đọc sách",
         "lướt web", "lấy nét", "âm thanh cuộc gọi", "cảm nhận đầu tiên", "nghe nhạc", "xài app", "mọi người", "mọi chức năng",
         "mọi ứng dụng", "thao tác", "dùng", "sử dụng", "khởi động", "hoạt động", "tác vụ", "ứng dụng", "làm việc",
-        "phần cứng", "dữ liệu lưu sdt",
-        # New terms
-        "mặc",  "mùi", "sách"
+        "ứng dụng camera", "phần cứng", "dữ liệu lưu sdt", "phụ kiện", "tai nghe", "bao da", "cảm biến vân tay", "dây sạc", "sạc pin",
+        "dây gắn tai nghe", "pin", "cổng sạc", "mic", "cục pin", "loa ngoài", "loa trong", "đèn vàng", "chữ to", "thời lượng pin",
+        "case tặng kèm", "túi tặng kèm", "camera kép", "sản phẩm khuyến mại", "máy đọc sách", "máy tính bảng", "ipad", "túi chống sốc",
+        "take note", "dán seal", "bóc seal", "miếng dán màn hình", "cổng sạc c", "bàn phím bấm", "dark mode", "hộp sạc", "pin dung lượng",
+        "âm lượng phát", "cục pin", "dung lượng", "bản mới", "camera trước", "camera chụp ảnh", "đèn", "phiếu bảo hành", "dây",
+        "hộp điện thoại", "túi bảo vệ", "nghe nói", "micro máy", "thân máy và sạc", "mắt", "kính", "lỗ sạc", "củ sạc", "gói", "bộ nhớ",
+        "dung lượng pin","dung lương pin", "máy",
+        # New terms (nếu có)
     ],
     "Dịch vụ và hỗ trợ khách hàng": [
+        # Từ vựng từ mục "Dịch vụ và hỗ trợ khách hàng"
         "dịch vụ", "hỗ trợ", "chăm sóc khách hàng", "nhân viên hỗ trợ", "nv giao hàng", "dịch vụ ship", "thái độ",
         "hỗ trợ kỹ thuật", "support", "nhân viên cskh", "phản hồi thông tin", "nhân viên chăm sóc khách hàng", "cskh",
         "dịch vụ giao hàng", "dịch vụ hỗ trợ", "dịch vụ hỗ trợ từ nhà cung cấp", "thái độ phục vụ", "tư vấn", "shop", "shop xử lý",
         "người bán", "bán hàng", "nhân viên", "nv giao hàng", "đội ngũ tiki", "nhân viện hỗ trợ", "nhân viên giao hàng",
-        "chăm sóc", "chăm sóc khách", "hàng giao", "tư vấn", "chăm sóc khách hàng", "trách nhiệm",
-        # New terms
-        "phục vụ", "tư vấn", "chất lượng dịch vụ"
+        "chăm sóc", "chăm sóc khách", "hàng giao", "giao",
+        # New terms (nếu có)
+    ],
+    "Giá cả và chi phí": [
+        # Từ vựng từ mục "Giá cả và chi phí"
+        "giá", "giá cả", "giá tiền", "tầm giá", "chi phí", "túi tiền", "mức giá", "giá thành", "gia", "giá cã", 
+        "gía", "tiền",
+        # New terms (nếu có)
     ],
     "Vận chuyển và đóng gói": [
+        # Từ vựng từ mục "Vận chuyển và đóng gói"
         "đóng gói", "vận chuyển", "thời gian giao hàng", "ship", "đơn vị vận chuyển", "vận chuyển đóng gói", "cách đóng gói",
         "bao bì", "bao gói", "gói quà", "đóng hộp", "ship hàng", "nhận hàng đóng gói", "đóng ngói", "nhận hành",
         "giao hàng", "nhân viên giao hàng", "đóng giói", "đóng hangd", "vận chuyện", "dong hàng", "giao hang",
         "cách đóng hàng", "đóng gói sản phẩm", "hộp đóng gói", "hộp giao", "đóng hàng", "khâu gói hàng", "khâu vận chuyển",
         "vỏ hộp", "vận chuyện", "giao hành", "hộp ngoài", "vận chuyển đóng gói", "bọc gói", "anh vận chuyển", 
         "bao", "đóng gói hàng", "phần cứng", "bưu tá", "kiện hàng", "shiper", "đường truyền",
-        # New terms
-        "đóng gói sản phẩm", "đóng gói", "hộp carton", "hộp đựng giày", "hộp đựng giầy"
-    ],
-    "Phụ kiện và tính năng bổ sung": [
-        "phụ kiện", "tai nghe", "bao da", "cảm biến vân tay", "dây sạc", "sạc pin", "dây gắn tai nghe",
-        "cổng sạc", "mic", "ram", "cục pin", "loa ngoài", "loa trong", "đèn vàng", "chữ to", "thời lượng pin", "case tặng kèm",
-        "túi tặng kèm", "camera kép", "sản phẩm khuyến mại", "phần mềm", "máy đọc sách", "máy tính bảng", "ipad",
-        "túi chống sốc", "take note", "dán seal", "bóc seal", "miếng dán màn hình", "cổng sạc c", "bàn phím bấm",
-        "dark mode", "hộp sạc", "pin dung lượng", "âm lượng phát", "cục pin", "dung lượng", "bản mới", "camera trước",
-        "camera chụp ảnh", "đèn", "phiếu bảo hành", "dây", "hộp điện thoại", "túi bảo vệ", "nghe nói", "micro máy", 
-        "thân máy và sạc", "mắt", "kính", "lỗ sạc", "củ sạc", "gói",
-        # New terms
-        "âm thanh", "dây sạc", "sáp khử mùi", "sáp", "khóa", "ví", "mực in", "sáp", "đừơg may"
-    ],
-    "Hóa đơn và giấy tờ": [
-        "giấy tờ", "hóa đơn", "xuất hoá đơn", "giấy tờ bảo hành", "hoá đơn bán hàng", "hoá đơn vat", "xuất hóa đơn",
-        "hóa đơn gtgt", "mã imei", "chính sách bảo hành", "thẻ bảo hành", "chính sách đổi trả", "trả hàng", "giấy bảo hành",
-        "hoá đơn điện tử", "giấy bảo hành", "phiếu bảo hành", "xuất hoá đơn vat",
-        # New terms
-        "giấy", "thời gian bảo hành"
+        # New terms (nếu có)
     ],
     "Khác": [
-        "quà tặng", "đổi", "ưu đãi", "hộp", "hàng dùng thử", "bản kid", "hàng điện tử",
-        "gói hàng", "hàng nhập khẩu", "hàng ref", "mọi thứ", 
-        "phiên bản", "bản thường", "cập nhật", "bản kid", "đơn hàng", "cập nhật", "portrait", "đổi","thấm hút"
-        # New terms
-        "công nghệ", "gối", "đồ", "kem", "son", "tất", "nội dung"
+        # Từ vựng từ các mục "Hóa đơn và giấy tờ" và "Khác"
+        "quà tặng", "hàng hóa", "đổi", "ưu đãi", "hộp", "hàng dùng thử", "bản kid", "hàng điện tử",
+        "gói hàng", "hàng nhập khẩu", "hàng ref", "mọi thứ", "hàng hoá", "sản phảm", "san phẩm", "san pham", "sp",
+        "phiên bản", "bản thường", "cập nhật", "bản kid", "đơn hàng", "cập nhật", "portrait", "đổi","thấm hút",
+        "công nghệ", "gối", "đồ", "kem", "son", "tủ quần áo", "thời trang", "lịch sử",
     ]
 }
 
