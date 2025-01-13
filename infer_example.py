@@ -6,11 +6,11 @@ from joblib import load
 import numpy as np
 
 # Đường dẫn tới mô hình tích hợp, từ điển khía cạnh và vectorizer
-MODEL_PATH = "state_dict/combined_model_combined_acc_0.8435.pth"
+MODEL_PATH = "state_dict/combined_model_combined_acc_0.9454.pth"
 ASPECT_DICT_PATH = "aspect_dict.txt"
 NAIVE_BAYES_MODEL_PATH = "train_model/naive_bayes_model.pkl"
 VECTORIZER_PATH = "train_model/tfidf_vectorizer.pkl"
-OVERALL_MODEL_PATH = "state_dict/phobert_sentiment_model_val_acc_0.8053.pth"
+OVERALL_MODEL_PATH = "state_dict/phobert_sentiment_model_val_acc_0.8103.pth"
 
 # Load từ điển khía cạnh
 def load_aspect_dict(filepath):

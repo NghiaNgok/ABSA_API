@@ -385,6 +385,7 @@ shipped
 camera trước
 máy tính bảng
 máy tính
+Máy tính
 PC
 chất vải
 laptop
